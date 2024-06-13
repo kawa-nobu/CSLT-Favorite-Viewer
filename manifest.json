@@ -1,0 +1,31 @@
+{
+  "name": "Favorite_Viewer",
+  "version": "1",
+  "manifest_version": 3,
+  "description": "いいねを確認する",
+  "web_accessible_resources": [{
+    "resources": [
+      "get_favorite.html",
+      "favorite.svg"
+    ],
+    "matches": [
+      "https://twitter.com/*",
+      "https://x.com/*"
+    ]
+  }],
+  "background" : {
+    "service_worker" : "background.js"
+  },
+  "permissions" : [
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://*.twitter.com/*",
+    "https://*.x.com/*"
+  ],
+  "content_scripts": [{
+    "matches": ["https://twitter.com/*", "https://x.com/*"],
+    "js": ["content.js"],
+    "all_frames": true
+    }]
+  }

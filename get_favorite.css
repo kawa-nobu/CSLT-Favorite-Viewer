@@ -1,0 +1,62 @@
+.app{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.user_infomation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user_infomation h4{
+    margin-top: 0;
+}
+.tweet_wrap{
+    background-color: rgb(162 172 186 / 25%);;
+    width: 30rem;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+.tweet_user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.tweet_user a{
+    text-decoration: none;
+    color: black;
+}
+.tweet_user span{
+    margin-left: 0.5rem;
+}
+.tweet_text{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+.tweet_source{
+    padding: 0.5rem;
+}
+.tweet_profile_image{
+    border-radius: 100px;
+}
+.tweet_media_content{
+    width: 45%;
+    border-radius: 10px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+.tweet_infomation{
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+}
+.tweet_open{
+    padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+    font-size: 1rem;
+}
+.tweet_open a{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
